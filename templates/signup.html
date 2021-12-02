@@ -1,0 +1,47 @@
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.5">
+  <title>Sign Up</title>
+  <link href="assets/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="assets/custom.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="big-app-container">
+    <div class="row banner">
+      <div class="col-sm-10 banner-text">
+        <h5>Smarthome Dashboard</h5>
+        <h6 class="d-none d-md-block">Process Control and Exception Reporting</h6>
+      </div>
+      <div class="col-sm-2">
+        <a href="signin"> <button> Sign In </button><a>
+      </div>
+    </div>
+
+    <div id="app-container">
+      <div class="caption">
+        <h3>Sign Un</h3>
+      </div>
+      <form action="/signup" method="POST">
+        <div class="row form-group">
+          <label class="col-sm-4">Username </label>
+          <input class="col-sm-6" name="username">
+        </div>
+        <div class="row form-group">
+            <label class="col-sm-4">Email </label>
+            <input class="col-sm-6" name="email">
+          </div>
+        <div class="row form-group">
+          <label class="col-sm-4">Password</label>
+          <input class="col-sm-6" name="password">
+        </div>
+        <div> {{ text }} </div>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
